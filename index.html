@@ -100,7 +100,7 @@
     // 更多关心话语列表
     const careTexts = [
       "保持好心情呀",
-      "我想你啦~",
+      "天天开心~",
       "今天过得开心嘛？",
       "祝你金榜题名！",
       "愿你梦想成真✨",
@@ -125,7 +125,7 @@
     function createPopup(text, index) {
       const popup = document.createElement("div");
       popup.className = `popup ${popupColors[index % popupColors.length]}`;
-      popup.innerHTML = `<span class="popup-title">💖 提示</span>${text}`;
+      popup.innerHTML = `<span class="popup-title">💖 屏幕前的你</span>${text}`;
 
       // 自适应屏幕：根据设备尺寸计算随机位置
       const screenWidth = window.innerWidth;
@@ -231,4 +231,5 @@
     };
   </script>
 </body>
+
 </html>
